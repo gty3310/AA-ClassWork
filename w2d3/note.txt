@@ -1,0 +1,36 @@
+Q: If we include two external css stylesheets that conflict with one another?
+  they will overwrite style in the order as browser encounter them
+Q: Why does this name not match? rel="stylesheet"
+  Required. Specifies the relationship between the current document and the linked document
+  example:    <link rel="stylesheet" href="./assets/css_reset.css" type="text/css"/>
+Q: instead of using class to change style of a specific element,
+can we address elements by its id inside of a css file
+  it is possible
+
+
+add external stylesheet, note the rel="stylesheet"
+  <link rel="stylesheet" href="./assets/css_reset.css" type="text/css"/>
+
+reason to use class in css
+  1. give style change to a specific element
+  2. take priority over other styles
+
+to change style of specific type of elements
+  header > img {
+    width: 100px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+Q: What is the DS_Store file for?
+  google it
+Q: What is the standard Gemfile format?
+  at least put in the line "   gem 'rspec'  "
+
+--require spec_helper
+
+Q: should we have only one subject per file, or per describe?
+Q: To test instance methods do we write a describe with # or not

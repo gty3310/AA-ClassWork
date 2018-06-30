@@ -1,0 +1,24 @@
+replace radio buttons with stars
+  input[type="radio"] {
+      -webkit-appearance: none;
+      width: 27px;
+      height: 27px;
+      background-image: url(./stars.png);
+      vertical-align: bottom;
+  }
+
+Selet multiple elements
+    input[type="radio"], select, input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    }
+  
+Change a buttons color when hover over it
+  input:last-child:hover {
+      -webkit-filter: brightness(90%);
+  }
+    
+Q: 
+h2 + .user_review {
+  border-top: 1px solid black;
+}

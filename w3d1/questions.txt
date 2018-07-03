@@ -1,0 +1,74 @@
+how to make this shorter
+  def population_constraint
+    # Which country has a population that is more than Canada but less than
+    # Poland? Show the name and the population.
+    execute(<<-SQL)
+      SELECT
+      name, population
+      FROM
+      countries
+      WHERE
+      population > (
+        SELECT
+        population
+        FROM
+        countries
+        WHERE
+        name = 'Canada'
+      )
+      AND
+      population < (
+        SELECT
+        population
+        FROM
+        countries
+        WHERE
+        name = 'Poland'
+      )
+
+
+
+    SQL
+  end
+
+
+  def country_counts
+    # For each continent show the continent and number of countries.
+    execute(<<-SQL)
+      SELECT DISTINCT continent, COUNT(name)
+      FROM
+      countries
+      GROUP BY continent
+    SQL
+  end
+
+aggregation of a property that is not mentioned inn group by can be used in having 
+
+  def populous_country_counts
+    # For each continent show the continent and number of countries with
+    # populations of at least 10 million.
+    execute(<<-SQL)
+      SELECT continent, COUNT(name)
+      FROM
+      countries
+      WHERE
+      population >= 10000000
+      GROUP BY
+      continent
+
+    SQL
+  end
+
+  def populous_continents
+    # List the continents that have a total population of at least 100 million.
+    execute(<<-SQL)
+      SELECT
+      continent
+      FROM
+      countries
+      GROUP BY
+      continent
+      HAVING
+      SUM(population) >= 100000000
+    SQL
+  end

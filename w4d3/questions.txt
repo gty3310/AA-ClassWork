@@ -1,0 +1,12 @@
+in routes, resources vs reource, how to deciside
+
+  resources :users, only: [:new, :create]
+
+  resource :session, only: [:new, :create, :destroy]
+    # online have one row of data for session, thus one resource
+    ##user only has one session. Rails also provides us with a resource method we can use declare routes for resources we will access without :ids, that is, resources of which the user will only ever access one, and only one. In our auth pattern, we use a singular resource session because a user only interacts with one session (their own).
+      #A visitor to your site implicitly has their own session (it's stored in their browser), so there's no need to create routes for different sessions
+
+
+In the delete action, do we need to run the following line, and why?
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">

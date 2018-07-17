@@ -1,0 +1,40 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  font-family: $sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px $gray solid;
+}
+
+.categories ul {
+  // width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 640px;
+  padding: 0 0 5px 0;
+  // margin-left: 22.5%;
+  // margin-right: 22.5%;
+}
+
+.categories ul li{
+  padding: 0 5px 0 5px;
+}
+.categories ul li:hover:not(:last-child) {
+  background-color: $light-gray;
+  // padding: 0 5px 0 5px;
+  text-decoration: none;
+}
+
+.categories ul li:last-child {
+  text-decoration: underline;
+  background-color: none;
+
+}
+.categories ul li a:hover:last-child {
+  text-decoration: underline;
+  background-color: none;
+
+}

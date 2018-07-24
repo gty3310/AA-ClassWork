@@ -1,0 +1,26 @@
+/* PHASE 7: Online */
+.profile-picture{
+  position: relative;
+  overflow: hidden;
+}
+.online {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  transform: rotate(-45deg) translateX(-25%);
+  box-shadow: 0 1px 0 0 #070;
+  background: green;
+  padding: 5px 30px;
+
+}
+strong{
+  text-align: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    /* padding: 0; */
+    border: 0;
+    outline: 0;
+}

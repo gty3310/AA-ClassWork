@@ -1,0 +1,38 @@
+.ttt ul li{
+  float: left;
+  width: 90px;
+  height: 90px;
+  background: grey;
+  display: flex;
+  border: 5px solid black;
+   cursor: pointer;
+  /* display: inline; */
+  /* display: list-item; */
+
+}
+.ttt ul li:hover{
+  background: yellow;
+}
+
+
+.ttt ul{
+  /* border: 5px solid black; */
+  flex-wrap: wrap;
+  display: flex;
+  margin: 30px auto;
+  width: 300px;
+  /* display: inline; */
+}
+.ttt ul li p{
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  /* font-size-adjust: auto; */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  
+}
+
+body {text-align: center;}

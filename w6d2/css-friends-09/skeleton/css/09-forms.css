@@ -1,0 +1,35 @@
+/* PHASE 9: Forms */
+
+.content-main .thumb {
+   float: left;
+  /* display: inline-block; */
+  display: block;
+    position: relative;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.content-main fieldset{
+  display: block;
+/* webkit-margin-start: 2px;
+webkit-margin-end: 2px;
+webkit-padding-before: 0.35em;
+webkit-padding-start: 0.75em;
+webkit-padding-end: 0.75em;
+webkit-padding-after: 0.625em; */
+min-width: -webkit-min-content;
+  float: right;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 19px;
+  margin: 0 0 0 20px;
+}
+fieldset label{
+  
+}
+
+.content-main form {
+  /* float: left; */
+}

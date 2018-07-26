@@ -12,4 +12,4 @@
 ### Week 5: Rails, CSS
 ### Week 6: Javascript
 [Tic Tac Toe Javascript Game](./w6d2/tictactoe): A simple front end tic tac toe game. Javascript, jQuary, CSS, HTML
-[Twitter](./w6d3/ajaxTwitter): A simple full stack project Twitter-like website. Implemented client-side real time web page rendering. Used Javascript, jQuary, AJAX, CSS, HTML.
+[Twitter](./w6d3/ajaxTwitter): A simple full stack project Twitter-like website. Implemented client-side real time rendering for the "follow" button. Used Javascript, jQuary, AJAX, CSS, HTML.

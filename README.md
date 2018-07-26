@@ -11,4 +11,5 @@
 [Ninety Nine Cats Website](./w4d3/ninety_nine_cats_ii): A simple full stack rails based websites to store cats' information, created from scratch. Forms, Separate forms out into partials, MVC in rails, authentication, HTML
 ### Week 5: Rails, CSS
 ### Week 6: Javascript
-[Tic Tac Toe Game](./w6d2/tictactoe): A simple front end tic tac toe game. Javascript, jQuary, CSS, HTML
+[Tic Tac Toe Javascript Game](./w6d2/tictactoe): A simple front end tic tac toe game. Javascript, jQuary, CSS, HTML
+[Twitter](./w6d3/ajaxTwitter): A simple full stack project Twitter-like website. Implemented client-side real time web page rendering. Used Javascript, jQuary, AJAX, CSS, HTML.

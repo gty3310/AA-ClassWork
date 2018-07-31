@@ -289,7 +289,7 @@ var TodoForm = function (_React$Component) {
         _react2.default.createElement(
           'button',
           { onClick: this.handleSubmit },
-          'bbb'
+          'Add TODO Item'
         )
       );
     }

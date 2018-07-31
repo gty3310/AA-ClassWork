@@ -19,6 +19,7 @@ const initialState = {
 
 
 const todosReducer = (state = initialState, action) => {
+  Object.freeze(state);
   switch (action.type) {
     case RECEIVE_TODOS:
       return arrayToObject(action.todos);
@@ -26,7 +27,9 @@ const todosReducer = (state = initialState, action) => {
       // let object = {};
       // object[action.todo.id] = action.todo;
       let object = {[action.todo.id]: action.todo};
-      return _.merge(state, object);
+      return _.merge({}, state, object);
+      // return Object.assign({}, state, object);
+
     default:
       return state;
   }

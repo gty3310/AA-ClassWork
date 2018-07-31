@@ -6,10 +6,10 @@ class App extends React.Component {
     super(props);
   }
   render(){
-    return (
-      <h1>App works!!</h1>
+    return(
+      <TodoListContainer />
     );
   }
 }
-
+//call TodoListContainer (receives props from the provider?)
 export default App;

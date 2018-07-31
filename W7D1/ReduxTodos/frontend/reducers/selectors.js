@@ -3,5 +3,3 @@ export const allTodos = (state) => {
     return state.todos[el];
   });
 };
-window.allTodos = allTodos;
-window.test = 'test';

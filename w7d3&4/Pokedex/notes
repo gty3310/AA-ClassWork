@@ -1,0 +1,4 @@
+npm install -g webpack
+npm run webpack
+
+at Selectors on pokedex 1
